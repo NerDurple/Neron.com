@@ -1,66 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <em>
-        <title>Neron's Jesus Project</title> 
+<html lang="en">
 
-
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Neron-Shammah">
-        <meta name="description" content="This Is my Jesus Project. I am making it Because I really Love Jesus and Programming.">
-        <style>
-            html {
-                font-size: 23px;
-            }
-
-            body {
-                background-color:  rgb(31, 27, 2);
-                color: whitesmoke;
-            }
-        </style>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>My Jesus Project</h1>
-        
-        <a href="https://www.youtube.com/watch?v=2mgUPt2KI08&pp=ygUFSmVzdXM%3D">Here, Watch The Movie About Jesus.</a>
-        <form action="/action_page.php">
-            <label for="Day of Birth">Day of Birth</label>
-            <input type="date" id="Day of Birth" name="Day of Birth">
-            <h3>My Friends are Wallace, Blessing, Suzie, Daddy, Mommy , Uncle Jo , Uncle Yachi , Mommy Sister , God , Jesus , Zahir , Neilan and more</h3>
-            <a href="https://youtu.be/kUMe1FH4CHE">This Is Where I Learned Programming</a>
-            <hr>
-    </form>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     
+    <title>Sign In</title>
+</head>
 
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1><br>
+                <span>Create your Email,Name and Password for registeration(You can Use your name if you like)</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1><br>
+                <span>Use your email and password to Enter</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="Forget your password.html">Forget Your Password?</a>
+                <button><a href="Signed in.html">Sign In</a></button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        const container = document.getElementById('container');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
+    
+    registerBtn.addEventListener('click', () => {
+        container.classList.add("active");
+    });
+    
+    loginBtn.addEventListener('click', () => {
+        container.classList.remove("active");
+    });
+        </script>
+</body>
 
-
-<h1>About My Mom,Neilan and Daddy</h1>
-
-
-            <a href="http://ngninkeulaw.com/">You can see my mom's Website</a>
-            <p>My Mom is a Hard Working Lawyer and I love Her. On March 4 and 5 6:00pm to 1:04am Tuesday and Wednesday 2025, When Neilan Puked Mommy and Daddy Helped Neilan.</p>
-            <a href="https://youtu.be/Qxpjjm8fr7o">This is my Favourite Music</a>
-            <hr>
-              <h1>Mommy's Office Card</h1>
-              <h2>Her Location</h2>
-              <p>Her location is 1280 Finch Avenue West,Suite 615, Toronto, Ontario M3J 3K6</p>
-              <h2>Her Phone Number</h2>
-              <p>Her Phone number is +1(647)512-9342</p>
-              <h2>Her Website</h2>
-              <a href="http://ngninkeulaw.com/">You can see my mom's Website</a>
-              <p>Her contact email is contact@ngninkeulaw.com or
-                lnnlawcorp@gmail.com
-              </p>
-              <h2>Her Social Media Email</h2>
-              <p>Her Social media email is @ngninkeulaw</p>
-                <hr>
-                <h1>This is Me</h1>
-              <img src="https://mail.google.com/mail/u/0?ui=2&ik=be896c2008&attid=0.1&permmsgid=msg-f:1825358345011066649&th=1954f9be5e2df719&view=fimg&fur=ip&permmsgid=msg-f:1825358345011066649&sz=s0-l75-ft&attbid=ANGjdJ8L5OYF8192-mBkTrh-gTOwKS5jxZgm3p16wVvQ_Q8nvvrXUXiTdYcnG2EdMrTtoYszJ1a5t2NCf3RoPeFj16O-K-zxzNXJS4XjxO6fho6SG2-hK3WqfnHUwo8&disp=emb&realattid=290C9280-967B-4547-839D-E866F252F72C&zw">
-              </body>
-        </em>
-    </body>
 </html>
